@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script>  $(window).on('load', function () {
-            var userid = 'a8116059';
-            var password = 'yhmo1213';
+    <script>//$(window).on('load', function start() {
+        function start() {
+            var userid = document.getElementById('tf1').value;//'a8116125'
+            var password = document.getElementById('tf2').value;//'01234OlzBk' 
 
             var sql = 'show tables';
             var query = {
@@ -24,12 +25,21 @@
                     window.location.href = "http://www.google.com";
                 }
             });
-        });
+        };
 
     </script>
 </head>
 
 <body>
+    <h1>ツイッター</h1>
+    <input id="tf1" type="textfield">ログイン名
+    <br> </br>
+    <input id="tf2" type="password">パスワード
+    <br> </br>
+    <button onclick="start()">ログイン </button>
+
+    <p id="result"></p>
+
 
 </body>
 
