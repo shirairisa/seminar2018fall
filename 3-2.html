@@ -7,7 +7,7 @@
     <script>
         function button1Pressed() {
             var userid = document.getElementById('tf1').value;
-            var password = document.getElementById('tf2').value;
+            var password = document.getElementById('tf2').value
             var tweet = document.getElementById('tf3').value;
 
             var sql = 'insert into Tweets (name, tweet, time) values("' + userid + '","' + tweet + '",now());';
@@ -26,7 +26,7 @@
             var userid = document.getElementById('tf1').value;
             var password = document.getElementById('tf2').value;
 
-            var sql = 'select * from Tweets order by time desc';
+            var sql = 'select * from Tweets order by time asc';
             var query = {
                 db: 'creco18',
                 userid: userid,
